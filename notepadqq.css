@@ -1,0 +1,50 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.page__keys-dropdown {
+    position: relative;
+}
+.page__keys-dropdown__header {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    width: 150px;
+    height: 30px;
+
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    align-items: center;
+
+}
+.page__keys-dropdown__header__title {
+    margin-left: 10px;
+}
+
+.page__keys-dropdown__header__arrow {
+    background: red;
+    cursor: pointer;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+.page__keys-dropdown__header__arrow:hover  .page__keys-dropdown__layer{
+    display: block;
+
+}
+.page__keys-dropdown__layer {
+    background: blue;
+    position: absolute;
+    width: 200px;
+    left: 135px;
+    bottom: -36px;
+    padding: 10px;
+    display: none;
+}
+
+.page__keys-dropdown__layer__item {
+
+}
